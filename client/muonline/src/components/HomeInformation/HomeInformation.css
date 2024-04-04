@@ -1,0 +1,86 @@
+.home-information{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.title-home-information{
+    display: flex;
+    padding: 5px;
+    border-bottom: 1px solid greenyellow;
+}
+
+.title-home-information-right-p{
+    display: flex;
+    justify-items: end;
+    gap: 10px;
+}
+
+.users-online{
+    color: greenyellow;
+}
+
+.conections-today{
+    color: goldenrod;
+}
+
+.logo-cocomu-home-information{
+    width: 50px;
+}
+
+.title-cocomu-server{
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    color: var(--grey-second-titles);
+}
+
+.home-information-server-list-item{
+    display: flex;
+    padding: 5px;
+}
+
+.home-information-server-list-item-title{
+    color: var(--grey-second-titles);
+    font-size: 20px;
+}
+
+.home-information-server-list{
+    padding: 10px;
+}
+
+.home-information-server-title{
+    text-align: center;
+    font-size: 25px;
+    color: var(--grey-second-titles);
+    list-style: circle;
+}
+
+
+.home-information-server-list-item-right{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.home-information-server{
+    padding: 5px;
+}
+
+.home-information-more-info-button{
+    display: flex;
+    justify-content: center;
+}
+
+.more-information-button-text{
+    font-size: 1em;
+}
+
+.more-information-button{
+    height: auto;
+    width: 15em;
+    padding: 0;
+}
+

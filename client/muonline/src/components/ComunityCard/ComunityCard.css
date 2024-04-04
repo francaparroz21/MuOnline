@@ -1,0 +1,41 @@
+.comunity-card-go-image{
+    width: 20px;
+}
+
+.comunity-card-image{
+    width: 30px;
+}
+
+.comunity-card-image-container{
+    text-align: center;
+    margin-top: -10px;
+}
+
+.comunity-card-container{
+    display: flex;
+    width: 8em;
+    padding: 5px;
+    flex-direction: column;
+    background-color: var(--background);
+    border-radius: 10px;
+    color: var(--grey-second-titles);
+}
+
+.comunity-card-title{
+    font-size: 1em;
+    text-align: center;
+    padding: 5px;
+}
+
+.comunity-card-username{
+    text-align: center;
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+.comunity-card-button-container{
+    text-align: center;
+}
+
+
+

@@ -1,0 +1,9 @@
+.home-card{
+    width: auto;
+    border: 0px;
+}
+
+.home-card-a{
+    display:inline-block;
+    gap: 10px;
+}

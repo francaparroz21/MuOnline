@@ -1,0 +1,32 @@
+.ranking-logo,
+.info-logo {
+    width: 30px;
+    filter: invert(100%);
+}
+
+.download-logo{
+    width: 50px;
+    filter: invert(100%);
+}
+
+.signup-icon,
+.login-icon {
+    width: 20px;
+}
+
+.logo-cocomu-logo {
+    width: 80px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+}
