@@ -1,10 +1,12 @@
 
 .carousel-images{
     width: auto;
+    margin: auto;
 }
 
 .banner-image{
     border-radius: 10px;
+    width: 100%;
 }
 
 

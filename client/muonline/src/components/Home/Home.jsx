@@ -10,8 +10,8 @@ const Home = () => {
         <div className="container-fluid">
 
             <div className="row home-row">
-                <div className="col-8 ">
-                    <Carousel />
+                <div className="col-8 carousel-home">
+                    <Carousel className="carousel-images" />
                 </div>
                 <div className="col-4 second-col">
                     <HomeInformation />

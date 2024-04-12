@@ -1,12 +1,5 @@
-.ranking-logo,
-.info-logo {
-    width: 30px;
-    filter: invert(100%);
-}
-
-.download-logo{
-    width: 50px;
-    filter: invert(100%);
+.fa-component{
+    color:rgb(186, 194, 199);
 }
 
 .signup-icon,
@@ -28,5 +21,6 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #000000;
+    background-color:#2a394f ;
 }
+/**/

@@ -1,0 +1,40 @@
+.carousel-download{
+    width: 80%;
+    margin: auto;
+}
+
+.container-fluid{
+    
+    background-color:#404258 ;  
+    color: white;
+ 
+    .historia{
+        background-color: #0d0d0d53;
+        border-radius: 20px;
+        
+     
+        
+        h1{
+            text-decoration: underline;
+            font-family: fantasy;
+        }
+        p{
+            font-family: cursive;
+        }
+    }
+    .descargar{
+        .card{
+            width: 80%;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.249);
+           
+        }
+       
+        
+    }
+}
+
+.second-row{
+   
+    padding: 50px;
+}

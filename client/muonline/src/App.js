@@ -5,6 +5,7 @@ import Home from "./components/Home/Home"
 import SignUp from "./components/SignUp/SignUp"
 import LogIn from "./components/LogIn/LogIn"
 import Footer from "./components/Footer/Footer"
+import Download from "./components/Download/Download"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path='/signup' element={<SignUp/>}></Route>
           <Route path='/login' element={<LogIn/>}></Route>
           <Route path='/rankings' element={"pete"}></Route>
+          <Route path='download' element={<Download/>}></Route>
         </Routes>
       </BrowserRouter>
       <Footer />
