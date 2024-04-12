@@ -1,6 +1,8 @@
 import "./Events.css"
 
 const Events = () => {
+
+
     return (
         <div className="events-container">
             <h2 className="events-title">🌟 Eventos</h2>

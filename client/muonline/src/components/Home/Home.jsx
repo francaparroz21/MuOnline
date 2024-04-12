@@ -8,22 +8,23 @@ const Home = () => {
     return (
 
         <div className="container-fluid">
+            <div className="fondo-tras">
+                <div className="row home-row">
+                    <div className="col-8 carousel-home">
+                        <Carousel className="carousel-images" />
+                    </div>
+                    <div className="col-4 second-col">
+                        <HomeInformation />
+                    </div>
+                </div>
 
-            <div className="row home-row">
-                <div className="col-8 carousel-home">
-                    <Carousel className="carousel-images" />
-                </div>
-                <div className="col-4 second-col">
-                    <HomeInformation />
-                </div>
-            </div>
-
-            <div className="row second-row">
-                <div className="col-8">
-                    <HomeCardList />
-                </div>
-                <div className="col-4 second-col">
-                    <Events />
+                <div className="row second-row">
+                    <div className="col-8">
+                        <HomeCardList />
+                    </div>
+                    <div className="col-4 second-col">
+                        <Events />
+                    </div>
                 </div>
             </div>
         </div>

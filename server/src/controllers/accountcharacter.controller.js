@@ -14,6 +14,7 @@ export const getAccounts = async (req, res) => {
 
 export const postAccount = async (req, res) => {
     try {
+        req.body.bloc_code = "0"
         const { username, password, name, code, bloc_code } = req.body
 
         if (username == null || password == null || name == null || code == null) {

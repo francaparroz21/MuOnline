@@ -4,7 +4,7 @@ config()
 
 
 export default {
-    port: process.env.PORT || 3030,
+    port: process.env.PORT || 3000,
 
     dbSettings: {
         user: process.env.USERDB,

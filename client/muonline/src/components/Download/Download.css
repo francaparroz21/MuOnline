@@ -1,40 +1,55 @@
-.carousel-download{
+.carousel-download {
     width: 80%;
     margin: auto;
 }
 
-.container-fluid{
-    
-    background-color:#404258 ;  
+.container-fluid {
+    background-image: url(../../../public/images/banner_example.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
     color: white;
- 
-    .historia{
+
+    .fondo-tras {
+        background-color: rgba(0, 0, 0, 0.752);
+        border-radius: 25px;
+        padding: 5%;
+    }
+
+    .historia {
         background-color: #0d0d0d53;
         border-radius: 20px;
-        
-     
-        
-        h1{
+        border-style: solid;
+        border-color: greenyellow;
+
+
+
+        h1 {
             text-decoration: underline;
             font-family: fantasy;
         }
-        p{
+
+        p {
             font-family: cursive;
         }
     }
-    .descargar{
-        .card{
+
+    .descargar {
+        .card {
             width: 80%;
             margin: auto;
             background-color: rgba(0, 0, 0, 0.249);
-           
+
         }
-       
-        
+
+
     }
 }
 
-.second-row{
-   
+.second-row {
+
     padding: 50px;
 }

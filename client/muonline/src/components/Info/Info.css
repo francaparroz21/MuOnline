@@ -1,0 +1,60 @@
+.container-info {
+    background-image: url(../../../public/images/banner_example.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+
+    .titulo-info {
+        text-decoration: underline;
+        font-family: fantasy;
+        padding: 10px;
+    }
+
+    .fondo-tras {
+        background-color: rgba(0, 0, 0, 0.752);
+        border-radius: 25px;
+        padding: 5%;
+        
+        
+
+
+        .descripcion {
+            background-color: rgba(0, 0, 0, 0.548);
+            border-radius: 50px;
+            border-color: greenyellow;
+            border-style: solid;
+            
+
+            h2 {
+                text-decoration: underline;
+                font-family: cursive;
+                padding: 10px;
+            }
+            p{
+                padding: 10px;
+            }
+        }
+
+        .video {
+            img {
+                width: 80%;
+                border-radius: 50px;
+            }
+        }
+
+        .tercera-row {
+          
+            justify-content:space-around;
+
+
+        }
+    }
+
+}
+
+.tercera-row>div {
+    width: 30%;
+}

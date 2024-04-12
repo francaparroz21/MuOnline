@@ -10,7 +10,7 @@ const app = express()
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-app.set('port', config.port || 3030)
+app.set('port', config.port || 3000)
 app.use('/api/ranking', rankingRouter)
 app.use('/api/accounts', memb_infoRouter)
 
