@@ -6,7 +6,7 @@
     background-attachment: fixed;
     height: 100%;
     width: 100%;
-
+    color: white;
     .titulo-info {
         text-decoration: underline;
         font-family: fantasy;
@@ -17,6 +17,7 @@
         background-color: rgba(0, 0, 0, 0.752);
         border-radius: 25px;
         padding: 5%;
+        
         
         
 

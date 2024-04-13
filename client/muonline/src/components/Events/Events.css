@@ -8,6 +8,10 @@
     color: white;
 }
 
+span{
+    color: whitesmoke;
+}
+
 .events-list{
     display: flex;
     flex-direction: column;

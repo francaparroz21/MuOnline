@@ -1,7 +1,8 @@
+import { useState } from "react";
 import "./Events.css"
 
 const Events = () => {
-
+    const [timeBloodCastle, setTimeBloodCastle] = useState()
 
     return (
         <div className="events-container">

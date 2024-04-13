@@ -12,6 +12,7 @@
 
 .login-title{
     color: whitesmoke;
+    text-align: center;
 }
 
 .login-input-container{
@@ -25,7 +26,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    background-image: url(../../../public/images/banner_example.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    color: white;
 }
 
 .login-button-submit{
@@ -46,5 +54,11 @@
     background-color: black;
     padding: 20px;
     border-radius: 10px;
-    width: 50%;
+    width: auto;
+}
+
+.fondo-tras {
+    background-color: rgba(0, 0, 0, 0.752);
+    border-radius: 25px;
+    padding: 5%;
 }

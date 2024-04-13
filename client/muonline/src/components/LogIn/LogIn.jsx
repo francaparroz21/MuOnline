@@ -3,7 +3,8 @@ import "./LogIn.css"
 
 const LogIn = () => {
     return (
-        <div className='form-login-container container'>
+        
+        <div className='form-login-container container-fluid'>
             <div className="fondo-tras">
                 <h2 className='login-title'>Entrar</h2>
 

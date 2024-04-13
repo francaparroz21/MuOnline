@@ -7,7 +7,7 @@ import HomeCardList from "../HomeCardList/HomeCardList";
 const Home = () => {
     return (
 
-        <div className="container-fluid">
+        <div className="container-fluid container-home">
             <div className="fondo-tras">
                 <div className="row home-row">
                     <div className="col-8 carousel-home">

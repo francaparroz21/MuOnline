@@ -2,13 +2,24 @@
     color:rgb(186, 194, 199);
 }
 
+
 .signup-icon,
 .login-icon {
     width: 20px;
 }
 
+.signup-login-btn{
+    width: 100%;
+}
+
 .logo-cocomu-logo {
     width: 80px;
+}
+
+.signup-login{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .navbar-right {

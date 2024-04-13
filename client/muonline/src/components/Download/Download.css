@@ -3,7 +3,7 @@
     margin: auto;
 }
 
-.container-fluid {
+.container-Download {
     background-image: url(../../../public/images/banner_example.jpg);
     background-position: center;
     background-size: cover;
@@ -12,11 +12,16 @@
     height: 100%;
     width: 100%;
     color: white;
+    padding: 20px;
 
     .fondo-tras {
         background-color: rgba(0, 0, 0, 0.752);
         border-radius: 25px;
         padding: 5%;
+        border-style: solid;
+       border-width: 10px;
+       border-color: gray;
+        
     }
 
     .historia {

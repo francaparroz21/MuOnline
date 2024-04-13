@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Download = () => {
     return (
         <>
-            <div className="container-fluid text-center">
+            <div className="container-fluid text-center container-Download">
                 <div className="fondo-tras">
                     <div className="row">
                         <div className="carousel-download col-12 ">

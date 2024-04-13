@@ -7,6 +7,7 @@ import LogIn from "./components/LogIn/LogIn"
 import Footer from "./components/Footer/Footer"
 import Download from "./components/Download/Download"
 import Info from './components/Info/Info';
+import Shop from './components/Shop/Shop';
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
           <Route path='/rankings' element={"pete"}></Route>
           <Route path='/download' element={<Download/>}></Route>
           <Route path='/info' element={<Info/>}></Route>
+          <Route path='/shop' element={<Shop/>}></Route>
+          <Route path='/cart' element={<Shop/>}></Route>
         </Routes>
       </BrowserRouter>
       <Footer />
