@@ -1,5 +1,5 @@
 .container-info {
-    background-image: url(../../../public/images/banner_example.jpg);
+    background: linear-gradient(rgba(32, 22, 26, 0.566), rgba(10, 8, 9, 0.75)), url(../../../public/images/banner_example.jpg) no-repeat center center fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,6 +7,7 @@
     height: 100%;
     width: 100%;
     color: white;
+
     .titulo-info {
         text-decoration: underline;
         font-family: fantasy;
@@ -14,47 +15,33 @@
     }
 
     .fondo-tras {
-        background-color: rgba(0, 0, 0, 0.752);
-        border-radius: 25px;
-        padding: 5%;
-        
-        
-        
-
-
-        .descripcion {
-            background-color: rgba(0, 0, 0, 0.548);
-            border-radius: 50px;
-            border-color: greenyellow;
-            border-style: solid;
-            
-
-            h2 {
-                text-decoration: underline;
-                font-family: cursive;
-                padding: 10px;
-            }
-            p{
-                padding: 10px;
-            }
+        h2 {
+            text-decoration: underline;
+            font-family: cursive;
+            padding: 10px;
         }
 
-        .video {
-            img {
-                width: 80%;
-                border-radius: 50px;
-            }
-        }
-
-        .tercera-row {
-          
-            justify-content:space-around;
-
-
+        p {
+            padding: 10px;
         }
     }
 
+    .video {
+        img {
+            width: 80%;
+            border-radius: 50px;
+        }
+    }
+
+    .tercera-row {
+
+        justify-content: space-around;
+
+
+    }
 }
+
+
 
 .tercera-row>div {
     width: 30%;

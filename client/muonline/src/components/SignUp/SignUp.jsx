@@ -2,6 +2,8 @@ import Button from 'react-bootstrap/Button';
 import "./SignUp.css"
 
 const SignUp = () => {
+
+
     return (
         <>
             <div className='body-signup'>
