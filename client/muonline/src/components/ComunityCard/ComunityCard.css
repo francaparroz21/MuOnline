@@ -9,7 +9,7 @@
 
 .comunity-card-image-container{
     text-align: center;
-    margin-top: -10px;
+    margin-top: -20px;
 }
 
 
@@ -18,7 +18,7 @@
     width: 8em;
     padding: 5px;
     flex-direction: column;
-    background-color: var(--background);
+    background-color: black;
     border-radius: 10px;
     color: white;
 }

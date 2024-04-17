@@ -57,6 +57,11 @@
     width: auto;
 }
 
+
+#pwd-incorrect-text{
+    color: red;
+}
+
 /*.fondo-tras {
     background-color: rgba(0, 0, 0, 0.364);
     border-radius: 25px;

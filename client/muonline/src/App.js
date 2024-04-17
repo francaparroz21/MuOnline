@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer"
 import Download from "./components/Download/Download"
 import Info from './components/Info/Info';
 import Shop from './components/Shop/Shop';
+import "react-toastify/dist/ReactToastify.css";
 
 
 function App() {

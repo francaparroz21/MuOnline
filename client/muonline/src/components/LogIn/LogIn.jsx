@@ -1,20 +1,16 @@
+import React from "react";
 import { Button } from "react-bootstrap";
 import "./LogIn.css"
 import axios from "axios";
+import Toastify from 'toastify-js'
+import "toastify-js/src/toastify.css"
 
 const LogIn = () => {
-
-
 
     const validationLogin = async () => {
 
         const user = document.getElementById("userId")
-        const passId = document.getElementById("passId")
-
-        const obj = {
-            "user": user,
-            "pass": passId
-        }
+        const pass = document.getElementById("passId")
 
         const form = document.getElementById('form-login');
 
@@ -27,13 +23,18 @@ const LogIn = () => {
 
 
 
-            try {
-                const result = fetch('http://localhost:3000/api/accounts', {
-                    mode: "no-cors",
-                    method: "get"
-                }).then(res=>console.log(res))
-            }
-            catch (err) { console.log(err) }
+            axios.get("http://localhost:3000/api/accounts").then(res => {
+                const finded = res.data.find(element => element.memb___id === user.value && element.memb__pwd === pass.value)
+                if (finded) {
+                    Toastify({
+                        text: "This is a toast",
+                        className: "info",
+                        
+                      }).showToast();
+                } else {
+                    document.getElementById("pwd-incorrect").innerHTML = `<p id="pwd-incorrect-text">Usuario o contraseña incorrectos.</p>`
+                }
+            })
 
 
 
@@ -41,25 +42,6 @@ const LogIn = () => {
 
         })
     }
-
-
-
-    //     form.addEventListener('submit', e => {
-    //         e.preventDefault();
-    //         const data = new FormData(form);
-    //         const obj = {};
-    //         data.forEach((value, key) => obj[key] = value);
-    //         fetch('http://localhost:3000/api/accounts', {
-    //             method: 'GET',
-    //             body: JSON.stringify(obj),
-    //             headers: {
-    //                 'Content-Type': 'application/json'
-    //             }
-    //         }).then(result =>
-    //             console.log(result)
-    //          }
-    //  })
-
 
 
     return (
@@ -73,13 +55,14 @@ const LogIn = () => {
                         <form id="form-login" className='login-form container' action="">
                             <div className="login-form-left">
                                 <div className="login-input-container">
-                                    <input id="userId" className="login-inputs" type="text" placeholder="Username" />
+                                    <input id="userId" name="user" className="login-inputs" type="text" placeholder="Username" />
 
                                 </div>
                                 <div className="login-input-container">
-                                    <input id="passId" className="login-inputs" type="password" placeholder="Password" />
+                                    <input id="passId" name="pass" className="login-inputs" type="password" placeholder="Password" />
                                 </div>
                             </div>
+                            <div id="pwd-incorrect"></div>
                             <div className='login-form-right login-button-container'>
                                 <Button onClick={validationLogin} className='login-button-submit' variant="outline-success" type="submit">
                                     Entrar

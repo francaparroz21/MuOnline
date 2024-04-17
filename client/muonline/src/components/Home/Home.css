@@ -1,28 +1,37 @@
 .container-home {
-    background: linear-gradient(rgba(32, 22, 26, 0.566), rgba(10, 8, 9, 0.75)), url(../../../public/images/banner_example.jpg) no-repeat center center fixed;
+    background: linear-gradient(rgba(32, 22, 26, 0.566), rgba(10, 8, 9, 0.75)), url(../../../public/images/dev5.png) no-repeat center center fixed;
     padding: 20px;
-    background-color: #404258;
+    /*background-color: #404258;*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;
     width: 100%;
+    
+   
+    
 }
 
 .fondo-tras {
-
-    /*background-image: linear-gradient(to bottom, #180e756d, rgba(6, 4, 29, 0.427));*/
+    border-style: solid;
+    border-color:#5F85DB;
+    border-radius: 20px;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.566);
+   /* background-image: linear-gradient(to bottom, #180e756d, rgba(6, 4, 29, 0.427));
     background-image: linear-gradient(to bottom, #750e0e6d, rgba(55, 8, 8, 0.427));
     border-radius: 25px;
     padding: 5%;
     border-style: solid;
     border-width: 5px;
     border-color: rgb(6, 16, 81);
+}*/
 }
 
 .second-row {
     padding-top: 20px;
+    
 }
 
 .carousel-home {
