@@ -2,8 +2,8 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import "./LogIn.css"
 import axios from "axios";
-import Toastify from 'toastify-js'
-import "toastify-js/src/toastify.css"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const LogIn = () => {
 
@@ -26,14 +26,10 @@ const LogIn = () => {
             axios.get("http://localhost:3000/api/accounts").then(res => {
                 const finded = res.data.find(element => element.memb___id === user.value && element.memb__pwd === pass.value)
                 if (finded) {
-                    Toastify({
-                        text: "This is a toast",
-                        className: "info",
-                        
-                      }).showToast();
+                    toast.success("Inicio de sesion exitoso!")
                 } else {
                     document.getElementById("pwd-incorrect").innerHTML = `<p id="pwd-incorrect-text">Usuario o contraseña incorrectos.</p>`
-                }
+                    toast.error("Fallo el inicio de sesion!")                }
             })
 
 
@@ -67,6 +63,8 @@ const LogIn = () => {
                                 <Button onClick={validationLogin} className='login-button-submit' variant="outline-success" type="submit">
                                     Entrar
                                 </Button>
+                                <ToastContainer position="top-right"
+                                />
                             </div>
                         </form>
                     </div>
