@@ -1,5 +1,7 @@
 .fa-component{
     color:rgb(186, 194, 199);
+    padding: 8px;
+    border-radius: 15px;
 }
 
 
@@ -31,8 +33,23 @@
 
 .navbar {
     display: flex;
+    padding: 10px;
     justify-content: space-between;
     background-color: black ;
     border-bottom: 2px solid gray;
 }
-/**/
+
+
+
+
+.navlink-profile:hover{
+    .fa-person{
+        background-color: whitesmoke;
+    }
+}
+
+
+.fa-person{
+    transform: scale(1.5);
+}
+

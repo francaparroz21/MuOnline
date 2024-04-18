@@ -24,12 +24,29 @@ const LogIn = () => {
 
 
             axios.get("http://localhost:3000/api/accounts").then(res => {
+                
                 const finded = res.data.find(element => element.memb___id === user.value && element.memb__pwd === pass.value)
                 if (finded) {
+                    const localStorageBefore = JSON.parse(localStorage.getItem("account"))
                     toast.success("Inicio de sesion exitoso!")
+                    localStorage.setItem("account", JSON.stringify(finded))
+                    if(!localStorageBefore.memb___id && !localStorageBefore.memb__pwd){
+                        setTimeout(() => {
+                            window.location.reload()
+                          }, 4000);
+                    }
                 } else {
+                    const localStorageBefore = JSON.parse(localStorage.getItem("account"))
                     document.getElementById("pwd-incorrect").innerHTML = `<p id="pwd-incorrect-text">Usuario o contraseña incorrectos.</p>`
-                    toast.error("Fallo el inicio de sesion!")                }
+                    toast.error("Fallo el inicio de sesion!")
+                    localStorage.setItem("account", JSON.stringify({}))
+                    if(localStorageBefore.memb___id && localStorageBefore.memb__pwd){
+                        setTimeout(() => {
+                            window.location.reload()
+                          }, 4000);
+                    }
+                }
+                
             })
 
 

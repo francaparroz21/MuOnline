@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.css"
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDownload, faCircleInfo, faCartShopping, faStore } from "@fortawesome/free-solid-svg-icons"
+import { faDownload, faCircleInfo, faCartShopping,faUser } from "@fortawesome/free-solid-svg-icons"
 
 const Navbar = () => {
     return (
@@ -29,8 +29,8 @@ const Navbar = () => {
                             <Button className="signup-login-btn" variant="dark">Ingresar<img className="login-icon" alt="login-icon" src={process.env.PUBLIC_URL + "/images/login.png"} /></Button>
                         </NavLink>
                     </div>
-                    <NavLink to={"./cart"}>
-                        <FontAwesomeIcon className="fa-component" icon={faStore} />
+                    <NavLink className={"navlink-profile"} to={"./profile"}>
+                        <FontAwesomeIcon className="fa-component fa-person" icon={faUser} />
 
                     </NavLink>
 

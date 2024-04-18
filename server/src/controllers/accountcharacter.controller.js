@@ -13,6 +13,20 @@ export const getAccounts = async (req, res) => {
     }
 }
 
+export const getCharactersById = async (req, res) => {
+    try {
+        res.set('Access-Control-Allow-Origin', '*');
+        const id = req.params.acc_id
+        const pool = await getConnection()
+        const result = await pool.request().query("select * from AccountCharacter")
+        const charactersFinded = result.recordset.find(element =>   element.Id === id)
+        res.json(charactersFinded)
+    }
+    catch (error) {
+        console.log(error)
+    }
+}
+
 export const postAccount = async (req, res) => {
     try {
         req.body.bloc_code = "0"

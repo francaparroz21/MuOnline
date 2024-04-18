@@ -9,9 +9,13 @@ import Download from "./components/Download/Download"
 import Info from './components/Info/Info';
 import Shop from './components/Shop/Shop';
 import "react-toastify/dist/ReactToastify.css";
+import Profile from './components/Profile/Profile';
 
 
 function App() {
+
+  const acc = JSON.parse(localStorage.getItem("account"))
+
   return (
     <>
       <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -25,6 +29,7 @@ function App() {
           <Route path='/info' element={<Info/>}></Route>
           <Route path='/shop' element={<Shop/>}></Route>
           <Route path='/cart' element={<Shop/>}></Route>
+          <Route path='/profile' element={<Profile info={acc}/>}></Route>
         </Routes>
       </BrowserRouter>
       <Footer />
