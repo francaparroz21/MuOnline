@@ -26,20 +26,22 @@ const Profile = ({ info, characters }) => {
                                     <ListGroup.Item>Id: {info.sno__numb}</ListGroup.Item>
                                     <ListGroup.Item>Name: {info.memb_name}</ListGroup.Item>
                                     <ListGroup.Item>Personajes: </ListGroup.Item>
-                                    <div>
-                                        <Card.Link href="#">{characters.GameID1}</Card.Link>
-                                    </div>
-                                    <div>
-                                        <Card.Link href="#">{characters.GameID2}</Card.Link>
-                                    </div>
-                                    <div>
-                                        <Card.Link href="#">{characters.GameID3}</Card.Link>
-                                    </div>
-                                    <div>
-                                        <Card.Link href="#">{characters.GameID4}</Card.Link>
-                                    </div>
-                                    <div>
-                                        <Card.Link href="#">{characters.GameID5}</Card.Link>
+                                    <div className='list-characters'>
+                                        <div>
+                                            <Card.Link href="#">{characters.GameID1}</Card.Link>
+                                        </div>
+                                        <div>
+                                            <Card.Link href="#">{characters.GameID2}</Card.Link>
+                                        </div>
+                                        <div>
+                                            <Card.Link href="#">{characters.GameID3}</Card.Link>
+                                        </div>
+                                        <div>
+                                            <Card.Link href="#">{characters.GameID4}</Card.Link>
+                                        </div>
+                                        <div>
+                                            <Card.Link href="#">{characters.GameID5}</Card.Link>
+                                        </div>
                                     </div>
                                 </Card.Body>
 

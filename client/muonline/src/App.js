@@ -10,6 +10,7 @@ import Info from './components/Info/Info';
 import Shop from './components/Shop/Shop';
 import "react-toastify/dist/ReactToastify.css";
 import Profile from './components/Profile/Profile';
+import Ranking from './components/Ranking/Ranking';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
           <Route path='/' element={<Home />}></Route>
           <Route path='/signup' element={<SignUp/>}></Route>
           <Route path='/login' element={<LogIn/>}></Route>
-          <Route path='/rankings' element={"pete"}></Route>
+          <Route path='/ranking' element={<Ranking/>}></Route>
           <Route path='/download' element={<Download/>}></Route>
           <Route path='/info' element={<Info/>}></Route>
           <Route path='/shop' element={<Shop/>}></Route>
