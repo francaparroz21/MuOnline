@@ -13,6 +13,18 @@ export const getAccounts = async (req, res) => {
     }
 }
 
+export const getCharacters = async (req, res) => {
+    try {
+        res.set('Access-Control-Allow-Origin', '*');
+        const pool = await getConnection()
+        const result = await pool.request().query("select * from Character")
+        res.json(result.recordset)
+    }
+    catch (error) {
+        console.log(error)
+    }
+}
+
 export const getCharactersById = async (req, res) => {
     try {
         res.set('Access-Control-Allow-Origin', '*');

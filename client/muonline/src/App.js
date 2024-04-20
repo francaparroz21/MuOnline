@@ -14,7 +14,9 @@ import Profile from './components/Profile/Profile';
 
 function App() {
 
+
   const acc = JSON.parse(localStorage.getItem("account"))
+  const char = JSON.parse(localStorage.getItem("characters"))
 
   return (
     <>
@@ -29,7 +31,7 @@ function App() {
           <Route path='/info' element={<Info/>}></Route>
           <Route path='/shop' element={<Shop/>}></Route>
           <Route path='/cart' element={<Shop/>}></Route>
-          <Route path='/profile' element={<Profile info={acc}/>}></Route>
+          <Route path='/profile' element={<Profile info={acc} characters={char}/>}></Route>
         </Routes>
       </BrowserRouter>
       <Footer />
