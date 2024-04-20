@@ -1,3 +1,21 @@
-.profile-container{
+.profile-container {
     padding: 20px;
+}
+
+.container-profile {
+    background: linear-gradient(rgba(32, 22, 26, 0.566), rgba(10, 8, 9, 0.75)), url(../../../public/images/dev5.png) no-repeat center center fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+.card-container{
+    padding: 10px;
+    background-color: black;
+    color: whitesmoke;
 }

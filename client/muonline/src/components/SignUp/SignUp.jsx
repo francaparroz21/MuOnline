@@ -8,7 +8,7 @@ const SignUp = () => {
         <>
             <div className='body-signup'>
 
-                <div className='form-signup-container container'>
+                <div className='form-signup-container container fondo-tras'>
                     <h2 className='signup-title'>Crear cuenta</h2>
 
                     <div className="signup-form-container">

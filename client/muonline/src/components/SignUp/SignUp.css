@@ -6,7 +6,17 @@
 }
 
 .body-signup{
-    background-color:#404258 ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(32, 22, 26, 0.566), rgba(10, 8, 9, 0.75)), url(../../../public/images/dev5.png) no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+
 }
 
 .signup-button-submit{
