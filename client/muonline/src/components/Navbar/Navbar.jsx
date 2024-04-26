@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import "./Navbar.css"
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDownload, faCircleInfo, faCartShopping,faUser } from "@fortawesome/free-solid-svg-icons"
+import { faDownload, faCircleInfo, faCartShopping, faUser,faStar } from "@fortawesome/free-solid-svg-icons"
 
 const Navbar = () => {
     return (
@@ -15,6 +15,9 @@ const Navbar = () => {
 
                 </div>
                 <div className="navbar-right">
+                    <NavLink to={"./ranking"}>
+                        <FontAwesomeIcon className="fa-component" icon={faStar} />
+                    </NavLink>
                     <NavLink to={"./shop"}><FontAwesomeIcon className="fa-component" icon={faCartShopping} /></NavLink>
                     <NavLink className="nav-item download-logo" to={"./download"}> <FontAwesomeIcon className="fa-component" icon={faDownload} /> </NavLink>
                     <NavLink className="nav-item info-logo" to={"./info"}> <FontAwesomeIcon className="fa-component" icon={faCircleInfo} /> </NavLink>

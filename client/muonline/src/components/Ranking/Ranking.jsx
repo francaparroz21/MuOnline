@@ -1,38 +1,51 @@
 import Table from 'react-bootstrap/Table';
+import "./Ranking.css"
+import axios from 'axios';
+import React from 'react';
 
 const Ranking = () => {
+    const [characters, setCharacters] = React.useState([])
+
+    React.useEffect(() => {
+        axios.get("http://localhost:3000/api/accounts/characters/").then((response) => {
+            console.log(response.data)
+            setCharacters(response.data);
+        });
+    }, []);
+
+
     return (
-        <>
-            <Table striped bordered hover>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Resets</th>
-                        <th>Name</th>
-                        <th>Username</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td colSpan={2}>Larry the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </Table>
-        </>
+        <div className='container-fluid container-ranking'>
+            <div className="fondo-tras">
+
+                <Table striped bordered hover>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Reset</th>
+                            <th>Level</th>
+                            <th>PK</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {
+                            characters.map((element,key) => {
+                                return (<tr key={key}>
+                                    <td>{key+1}</td>
+                                    <td>{element.Name}</td>
+                                    <td>{element.ResetCount}</td>
+                                    <td>{element.cLevel}</td>
+                                    <td>{element.PkCount}</td>
+                                </tr>)
+                            })}
+
+
+                    </tbody>
+                </Table>
+            </div>
+        </div>
     )
 }
 

@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom";
 import "./HomeCard.css"
 import { Card } from "react-bootstrap";
 
 const HomeCard = ({ props }) => {
     return (
-        <a className="home-card-a" href={props.route}>
+        <Link to={props.route}>
             <Card className="home-card">
                 <Card.Img src={props.routeImage} />
             </Card>
-        </a>
+        </Link>
     )
 }
 

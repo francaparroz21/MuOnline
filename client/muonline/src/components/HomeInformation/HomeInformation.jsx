@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import "./HomeInformation.css"
+import { Link } from 'react-router-dom';
 
 const HomeInformation = () => {
     return (
@@ -41,7 +42,7 @@ const HomeInformation = () => {
                             </div>
                         </li>
                         <li className="home-information-server-list-item">
-                            
+
                             <div className="home-information-server-list-item-right">
                                 <h3 className="home-information-server-list-item-title">
                                     Server Drop: 70%
@@ -52,7 +53,7 @@ const HomeInformation = () => {
                             </div>
                         </li>
                         <li className="home-information-server-list-item">
-                            
+
                             <div className="home-information-server-list-item-right">
                                 <h3 className="home-information-server-list-item-title">
                                     Master reset
@@ -66,7 +67,9 @@ const HomeInformation = () => {
                 </div>
             </div>
             <div className='home-information-more-info-button'>
-                <Button className='more-information-button' variant='outline-info'><span className='more-information-button-text'>Más información</span></Button>
+                <Link to="./info">
+                    <Button className='more-information-button' variant='outline-info'><span className='more-information-button-text'>Más información</span></Button>
+                </Link>
             </div>
         </div>
     )
